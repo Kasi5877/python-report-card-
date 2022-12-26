@@ -1,0 +1,21 @@
+marks = {} 
+total = 0 
+subjects = ["Math", "English", "Physics", "Chemistry", "Hindi"] 
+ 
+for subject in subjects: 
+    marks[subject] = input("Enter " + subject + " marks : ") 
+ 
+for key in marks.values(): 
+    total += int(key) 
+ 
+percentage = (total*100) / 500
+if percentage >= 80: 
+    print("A") 
+elif percentage >= 60: 
+    print("B") 
+elif percentage >= 50: 
+    print("C") 
+else: 
+    print("Fail") 
+ 
+print(f"With a percentage of {percentage}%")
